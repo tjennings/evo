@@ -1,0 +1,22 @@
+concepts
+   Individual - one genetic program to evaluate and evolve
+   Population - a pool of individuals 
+   Evolver - TinyGP (the thing that does the evolution, coordinates everything else.
+   Selector - selects the best-of or worst-of a generation.  Uses a "Tournament"
+     Tournament
+   Crossover - Randomly mix two individuals together to produce an offspring
+   Mutation - Randomly alter one individual to produce a new offspring
+   Fitness - algorithm used to evaluate the worthiness of an individual
+   FitnessCase - one dataset used by the fitness algorithm, there should be many.
+
+   Grammar - set of Symbols that a genetic program (the indidividual) can be composed of
+     Symbol - The top-level representation of everything in a Grammar.
+       Terminal - A end-leaf node that depends on no other sybols (a constant, variable or random value)
+         Constant
+         Variable
+         Random value
+       Function - A branch node that depends on n symbols to acheive its calculation.
+         Add
+         Subtract
+         Divide
+         ...
